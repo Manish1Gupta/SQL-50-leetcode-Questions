@@ -1,0 +1,6 @@
+# Write your MySQL query statement below
+#DELETE  FROM Customer WHERE id=2;
+
+  # Question me bola gya hai ki refree_id is not equal to 2 or refree_id is null;
+SELECT name FROM Customer WHERE referee_id != 2 or referee_id is null;
+
