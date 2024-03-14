@@ -1,0 +1,10 @@
+# Write your MySQL query statement below
+select  w1.id
+from Weather w1
+inner join Weather w2
+where datediff(w1.recorddate,w2.recorddate)=1             #DATEDIFF ka use iss liye kiya ki  previous date and next date ke diff ke liye use kiya 
+And w1.temperature > w2.temperature
+
+
+
+# previous and vext day (2 dino ke bicth ka diff find krna ho to)  datediff function ka use krte hai
