@@ -1,7 +1,7 @@
 # Write your MySQL query statement below
 select  w1.id
 from Weather w1
-inner join Weather w2
+inner join Weather w2                    # innear join means 2 table ke common part ko return krta hai ....intersection part ko
 where datediff(w1.recorddate,w2.recorddate)=1             #DATEDIFF ka use iss liye kiya ki  previous date and next date ke diff ke liye use kiya 
 And w1.temperature > w2.temperature
 
